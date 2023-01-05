@@ -26,6 +26,8 @@ namespace CarLotSimulator
 
             truck.MakeHonkNoise();
             truck.MakeEngineNoise();
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
+
 
             var van = new Car();
             lot.CarList.Add(van);
@@ -38,6 +40,8 @@ namespace CarLotSimulator
 
             van.MakeHonkNoise();
             van.MakeEngineNoise();
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
+
 
             var suv = new Car();
             lot.CarList.Add(suv);
@@ -50,6 +54,7 @@ namespace CarLotSimulator
 
             suv.MakeHonkNoise();
             suv.MakeEngineNoise();
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
 
 
 
@@ -63,9 +68,11 @@ namespace CarLotSimulator
 
             //*************BONUS X 2*************//
 
-            foreach(var car in lot.CarList)
+
+            foreach (var car in lot.CarList)
             {
                 Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model}");
+
             }
 
             //Create a CarLot class
